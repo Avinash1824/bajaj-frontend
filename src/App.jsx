@@ -29,7 +29,7 @@ function App() {
   const handleSubmit = () => {
     if (isValidJson) {
       console.log("Valid JSON:", parsedData);
-      Axios.post("http://localhost:3000/bhfl", parsedData)
+      Axios.post("https://bajaj-backend-ibqc.onrender.com/bhfl", parsedData)
         .then((res) => {
           console.log(res.data);
           setNum(res.data.numbers);
